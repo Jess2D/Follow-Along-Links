@@ -27,6 +27,19 @@
 
   <script>
     // 👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀
+    const triggers = document.querySelectorAll('a');
+    const hightlight = document.createElement('span');
+    hightlight.classList.add('hightlight');
+
+    document.body.append(hightlight);
+
+    function hightlightLink(){
+      console.log("Higthso")
+
+    }
+
+
+    triggers.forEach(a => a.addEventListener('mouseenter', hightlightLink))
   </script>
 </body>
 </html>
